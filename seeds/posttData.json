@@ -1,17 +1,14 @@
 [
   {
-    "name": "Music Near Me",
-    "description": "A mobile app that will send you notifications whenever a concert is playing in your area.",
-    "needed_funding": 5000
+    "title": "Coding is hard",
+    "Content": "I think coding is difficult but also fun"
   },
   {
-    "name": "The Ultimate Tech Quiz",
-    "description": "A web app that will give users 10 new technical questions each day and track their progress in things like programming, cybersecurity, database architecture, and more!",
-    "needed_funding": 10000
+    "title": "Good resources for sequelize",
+    "content": "Sequelizes website is a good resource for all things sequelize"
   },
   {
-    "name": "Roll 'Em Up",
-    "description": "A game for Windows and macOS where players move a ball through a series of increasingly challenging mazes.",
-    "needed_funding": 800
+    "title": "Javascript Tips",
+    "content": "I have none, someone please comment"
   }
-]
+] 
