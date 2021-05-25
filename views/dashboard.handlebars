@@ -5,12 +5,17 @@
 
     {{#each posts as |posts|}}
     <div class="row mb-2">
+      <div class="card">
       <div class="col-md-8">
-        <h4><a href="/post/{{post.id}}">{{post.name}}</a></h4>
+        <h4 class="card-header"><a href="/post/{{post.id}}">{{post.name}}</a></h4>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 card-body">
+        <p class="card-text">
+          {{post.content}}
+        </p>
         <button class="btn btn-sm btn-danger" data-id="{{post.id}}">DELETE</button>
       </div>
+    </div>
     </div>
     {{/each}}
   </div>
@@ -18,7 +23,7 @@
 </div>
 
 <div class="d-grid gap-2 col-6 mx-auto">
-  <button type="create" class="btn btn-primary" type="button">Create New Post</button>
+  <a href="/views/createpost.handlebars" class="btn btn-primary" type="button">Create New Post</button>
 </div>
 
 <script src="../public/js/dashboard.js"></script>
