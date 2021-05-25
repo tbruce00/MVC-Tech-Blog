@@ -14,15 +14,15 @@
   <div class="flex-column justify-space-around">
     <header class="display-flex justify-space-between align-center p-2">
      <nav class="nav nav-pills flex-column flex-sm-row">
-      <a class="flex-sm-fill text-sm-center nav-link active" aria-current="page" href="#">Home</a>
+      <a class="flex-sm-fill text-sm-center nav-link active" aria-current="page" href="/views/homepage.handlebars">Home</a>
       {{#if logged_in}}
-      <a class="flex-sm-fill text-sm-center nav-link" href="/dashboard">Dashboard</a>|
+      <a class="flex-sm-fill text-sm-center nav-link" href="/views/dashboard.handlebars">Dashboard</a>|
       <button class="no-button" id="logout">Logout</button>
-    {{else}}
+      {{else}}
       <a class="flex-sm-fill text-sm-center nav-link" href="/login">Login</a>
-    {{/if}}
-    <h1>Tech Blog</h1>
-    </nav>
+      {{/if}}
+      <h1>Tech Blog</h1>
+      </nav>
     </header>
     <main class="container container-fluid mt-5">
       <!-- Render the sub layout -->
@@ -35,7 +35,7 @@
 
   <!-- Render script for logged in users only -->
   {{#if logged_in}}
-  <script src="/js/logout.js"></script>
+  <script src=""></script>
   {{/if}}
 </body>
 
