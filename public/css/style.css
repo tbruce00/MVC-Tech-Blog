@@ -1,6 +1,9 @@
 header, .project:not(:last-child) {
   border-bottom: 1px solid #ccc;
 }
+nav {
+  background-color: rgb(59, 84, 199);
+}
 
 .no-button {
   background: none;

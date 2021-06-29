@@ -1009,25 +1009,25 @@ a:hover {
 }
 
 .btn.btn-primary {
-  background-color: #2d3e50;
+  background-color: #0a1f35;
   color: #d9e9e8;
 }
 
 .btn.btn-primary:hover {
-  background-color: #57779a;
+  background-color: #767d85;
 }
 
 .btn.btn-danger {
-  background-color: #e64c66;
+  background-color: #530411;
   color: #ffffff;
 }
 
 .btn.btn-danger:hover {
-  background-color: #ee8294;
+  background-color: #5e343b;
 }
 
 .btn.btn-info {
-  background-color: #1bbc9b;
+  background-color: #1c3530;
   color: #ffffff;
 }
 
