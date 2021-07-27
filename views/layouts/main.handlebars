@@ -4,26 +4,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <base href="/">
   <title>Tech Blog</title>
-  <link rel="stylesheet" href="/css/jass.css">
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="css/style.css" type="text/css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 </head>
 
 <body>
   <div class="flex-column justify-space-around">
-    <header class="display-flex justify-space-between align-center p-2">
-     <nav class="nav nav-pills flex-column flex-sm-row">
-      <a class="flex-sm-fill text-sm-center nav-link active" aria-current="page" href="/views/homepage.handlebars">Home</a>
+    <div class="display-flex justify-space-between align-center p-2">
+     <nav class="navBar nav flex-column flex-sm-row">
+      <h1>Tech Blog</h1>
+      <a class="flex-sm-fill nav-link active home-title" aria-current="page" href="/">Home</a>
       {{#if logged_in}}
-      <a class="flex-sm-fill text-sm-center nav-link" href="/views/dashboard.handlebars">Dashboard</a>|
+      <a class="flex-sm-fill text-sm-center nav-link" href="/dashboard">Dashboard</a>|
       <button class="no-button" id="logout">Logout</button>
       {{else}}
-      <a class="flex-sm-fill text-sm-center nav-link" href="/views/login.handlebars">Login</a>
+      <a class="flex-sm-fill text-sm-center nav-link" href="/login">Login</a>
+      <a class="flex-sm-fill text-sm-center nav-link" href="/signup">SignUp</a>
       {{/if}}
-      <h1>Tech Blog</h1>
       </nav>
-    </header>
+    </div>
     <main class="container container-fluid mt-5">
       <!-- Render the sub layout -->
       {{{ body }}}
@@ -36,7 +37,7 @@
   <!-- Render script for logged in users only -->
   {{#if logged_in}}
   <script src="/public/js/dashboard.js"></script>
+  <script src="/public/js/logout.js"
   {{/if}}
 </body>
-
 </html>

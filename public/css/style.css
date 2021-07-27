@@ -1,8 +1,30 @@
-header, .project:not(:last-child) {
-  border-bottom: 1px solid #ccc;
+body {
+  background-color: wheat;
 }
-nav {
+
+nav .navBar {
   background-color: rgb(59, 84, 199);
+  margin-bottom: 1rem;
+  width: 100%;
+  height: 2rem;
+  padding: .25rem;
+}
+.nav-links {
+  justify-content: space-evenly;
+}
+
+h1 {
+  display: flex;
+  font-size: 40px;
+  text-align: center;
+}
+
+.home-title {
+  text-decoration: none;
+  font-size: 40px;
+  font-weight: 400;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
 }
 
 .no-button {
@@ -10,9 +32,9 @@ nav {
   border: none;
   padding: 0;
   cursor: pointer;
-  color: #1b89bc;
+  color: whitesmoke;
   text-decoration: none;
-  font-size: 100%;
+  font-size: 35px;
 }
 
 .no-button:hover {
@@ -20,8 +42,21 @@ nav {
   text-decoration: underline;
 }
 
-.dollar-amount {
-  color: #056605;
-  font-weight: bold;
-  margin-left: -5px;
+a .postTitle {
+  text-decoration: none;
+  font-size: 35px;
+  font-weight: 500;
 }
+.postCard {
+  margin-top: 15px;
+  border-style: solid;
+  background-color: thistle;
+}
+
+.postBox {
+  padding: .25rem;
+  margin-bottom: 10px;
+  border: 5px solid black;
+  color: azure;
+}
+
