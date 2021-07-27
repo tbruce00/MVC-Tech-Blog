@@ -1,9 +1,9 @@
 <div class="container">
-<div class="card text-center postCard">
-  <h2 class="postTitle">{{title}}</h2>
-  <div class="postBox">
-  <p>{{content}}</p>
-  <p>Created by {{user.name}} on {{format_date date_created}}</p>
+<div class="postMalone text-center col-md-6">
+  <h2 class="postMan">{{title}}</h2>
+  <div class="col-4">
+  <p class="postContent">{{content}}</p>
+  <p class="postInfo">Created by {{user.name}} on {{format_date date_created}}</p>
   </div>
 </div>
 </div>
@@ -19,14 +19,14 @@
   </div>
 </form>
 
-{{#/if}}
+{{/if}}
 
 <div class="container">
 <h2 class="text-center">Comments</h2>
 {{#each comments as |comment|}}
 <div class="commentBox">
-  <p class="commentStuff">{{comment.comment_description}}</p>
-  <p class="commentUser">Created By: {{comment.user.name on {{format_date date_created}}</p>
+  <p class="commentStuff">{{comment.new_comment}}</p>
+  <p class="commentUser">Created By: {{comment.user.name}} on {{format_date date_created}}</p>
 </div>
 </div>
 {{/each}}

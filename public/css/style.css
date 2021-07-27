@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(39, 34, 26);
+  background-color: rgb(187, 164, 128);
 }
 
 .navBar {
@@ -9,7 +9,7 @@ body {
   padding: .5rem;
   color: whitesmoke;
 }
-.nav-link {
+.navBar .nav-link {
   justify-content: space-around;
   color: whitesmoke;
   padding: auto;
@@ -26,7 +26,7 @@ h1 {
   text-align: center;
 }
 
-.home-title {
+.navBar .home-title {
   text-decoration: none;
   font-weight: 400;
   font-family: Arial, Helvetica, sans-serif;
@@ -48,21 +48,62 @@ h1 {
   text-decoration: underline;
 }
 
-a .postTitle {
+.postTitle {
   text-decoration: none;
   font-size: 35px;
   font-weight: 500;
-}
-.postCard {
-  margin-top: 15px;
-  border-style: solid;
-  background-color: thistle;
+  color: black;
 }
 
+.postCard {
+  border-style: solid;
+  background-color: thistle;
+  color: aliceblue;
+  padding: 5px 5px 5px 5px;
+  width: 40vw;
+}
+.postBy {
+  color: gold;
+  font-size: 20px;
+}
 .postBox {
   padding: .25rem;
   margin-bottom: 10px;
-  border: 5px solid black;
-  color: azure;
+  color: black;
 }
 
+.postMalone {
+  margin-top: 15px;
+  border: 2px solid black;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: cornflowerblue;
+}
+.postMan {
+text-decoration: none;
+font-size: 35px;
+font-weight: 500;
+border-bottom-style: groove;
+border-bottom-width: 50vw;
+border-bottom-color: cadetblue;
+margin-bottom: 1rem;
+
+}
+
+.postContent{
+  font-size: 25px;
+  text-align: center;
+  font-weight: 200;
+  color: black;
+  margin-bottom: 1rem;
+  border-bottom-style: solid;
+  border-bottom-width: 50vw;
+}
+
+.postInfo {
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  color: black;
+  padding: .5rem;
+}
