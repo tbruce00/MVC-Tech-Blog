@@ -4,6 +4,7 @@ const routes = require('./controllers');
 const helpers = require('./utils/helpers');
 const exphbs = require('express-handlebars');
 const path = require('path');
+const compression = require('compression');
 
 const sequelize = require('./config/connection');
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
@@ -32,7 +33,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
-
+app.use(compression())
 app.use(routes);
 
 sequelize.sync({ force: false }).then(() => {
