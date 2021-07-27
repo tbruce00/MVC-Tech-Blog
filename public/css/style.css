@@ -134,3 +134,16 @@ margin-bottom: 1rem;
   margin: auto;
   width: auto;
 }
+
+.commentbox {
+  border: 3px solid black;
+}
+
+.commentStuff {
+  font-size: 15px;
+}
+
+.commentUser {
+  font-size: 20px;
+  font-weight: 300;
+}
